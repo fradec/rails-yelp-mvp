@@ -12,6 +12,13 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <div class="navbar-brand d-flex justify-content-between mt-3">
+        <%= link_to "List of restaurants", restaurants_path, class: "btn btn-primary" %>
+        <%= link_to "Add a restaurant", new_restaurant_path, class: "btn btn-primary" %>
+      </div>
+      <hr>
+      <%= yield %>
+    </div>
   </body>
 </html>

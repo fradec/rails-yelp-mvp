@@ -1,7 +1,7 @@
 <h2>List of restaurants</h2>
 
-<% @restaurants.each do |restaurant| %>
-  <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
-<% end %>
-
-<%= link_to "Add a restaurant", new_restaurant_path %>
+<div class="my-5">
+  <% @restaurants.each do |restaurant| %>
+    <li class="list-group-item"><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+  <% end %>
+</div>

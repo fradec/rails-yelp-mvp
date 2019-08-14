@@ -5,10 +5,10 @@
   <%= f.input :content %>
   <%= f.input :rating %>
 
-  <%= f.submit %>
+  <%= f.submit class: "btn btn-primary" %>
 
 <% end %>
 
 <hr>
 
-<%= link_to "Back to the restaurant", restaurant_path(@restaurant) %>
+<%= link_to "Back to the restaurant page", restaurant_path(@restaurant), class: "btn btn-primary" %>
