@@ -11,4 +11,12 @@
 
 <hr>
 
+<h3>Reviews</h3>
+
+<% @restaurant.reviews.each do |review| %>
+  <li><strong>Rating: </strong><%= review.rating %> — <%= review.content %></li>
+<% end %>
+
+<hr>
+
 <%= link_to "Back to list", restaurants_path %>
