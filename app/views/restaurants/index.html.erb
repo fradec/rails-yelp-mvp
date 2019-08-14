@@ -7,7 +7,10 @@
       <% restaurant.reviews.each do |review| %>
         <% count += review.rating %>
       <% end %>
-      <span class="badge badge-primary badge-pill"><%= count / restaurant.reviews.length %> ⚝</span>
+      <% if restaurant.reviews.length != 0 %>
+        <span class="badge badge-primary badge-pill">
+        <%= count / restaurant.reviews.length %> ⚝</span>
+      <% end %>
     </li>
   <% end %>
 </div>
